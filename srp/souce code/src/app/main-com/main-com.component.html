@@ -1,0 +1,84 @@
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 text-center">
+            <button [hidden]="start_but" class="btn btn-success main_btn" (click)="start_game()">Start Game</button>
+            <div [hidden]="!start_but">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-12 bg-success mt-2 rounded hum1">HUMAN</div>
+                            </div>
+                            
+                            <button (click)="paper()" class="btn btn-danger human"> paper</button><br><br>
+                            <button (click)="rock()" class="btn btn-danger human"> rock</button><br><br>
+                            <button (click)="sci()" class="btn btn-danger human"> scissor</button><br><br>
+
+                        </div>
+<!------------col 2---------------------------------->
+                        <div class="col-6 main_box"> 
+
+<h1> Main container</h1>
+<div class="row">
+    <div class="col-6 game_vid">
+        <h3> Human</h3>
+        
+        <img [src]="l_img_url" height="150px">
+        
+    
+    </div>
+    <div class="col-6 game_vid">
+        <h3> machine</h3>
+        <img [src]="r_img_url" height="150px">
+        
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12"> 
+        <h3>Match no:<span style="color:red;"> {{t_match}}</span></h3>
+        
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-6">
+        <h4>Human</h4>
+        <hr style="border:solid 2px">
+        <h5>Win:{{h_win}} score</h5>
+        <h5> Draw:{{h_draw}}</h5>
+        <h5> Loss:{{h_lost}} matches</h5>
+    </div>
+    <div class="col-6">
+        <h4>Machine</h4>
+        <hr style="border:solid 2px">
+        <h5>Win:{{m_win}} score</h5>
+        <h5> Draw:{{m_draw}}</h5>
+        <h5> Loss:{{m_lost}} matches</h5>
+
+    </div>
+</div>
+                            </div>
+                        <div class="cpol-3">
+                            <div class="row">
+                                <div class="col-12 bg-success mt-2 rounded hum1"> MACHINE</div>
+                            </div>
+                            <button class="btn btn-danger human"> paper</button><br><br>
+                            <button class="btn btn-danger human"> rock</button><br><br>
+                            <button class="btn btn-danger human"> scissor</button><br><br>
+
+                        </div>
+                    </div>
+                </div>
+                    
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+            
+            
+            </div>
+
+
+</div>
+ 
